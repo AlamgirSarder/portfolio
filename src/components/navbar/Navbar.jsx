@@ -18,10 +18,10 @@ const Navbar = () => {
       <Container>
         <Flex className=" pt-9 items-baseline">
           <div className="flex-1">
-            <img src={logo} alt="logo" />
+            <img className="w-auto" src={logo} alt="logo" />
           </div>
           <div className="mr-9">
-            <ul className="flex gap-x-8">
+            <ul className="flex gap-x-8 relative after:absolute after:content-[''] after:w-[1px] after:h-[26px] after:bg-white after:top-1/2 after:-translate-y-1/2 after:-right-2.5">
               {menulist.map((item, i) => (
                 <li key={i}>
                   <a
