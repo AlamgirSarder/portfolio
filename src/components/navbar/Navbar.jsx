@@ -25,7 +25,7 @@ const Navbar = () => {
               {menulist.map((item, i) => (
                 <li key={i}>
                   <a
-                    className="font-primary text-white text-2xl transition-all duration-300 hover:text-[#00C0FF]"
+                    className="font-secondary text-white text-2xl transition-all duration-300 hover:text-[#00C0FF]"
                     href="#"
                   >
                     {item}
