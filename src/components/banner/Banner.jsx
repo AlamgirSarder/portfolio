@@ -39,7 +39,7 @@ const Banner = () => {
               <p className="font-medium text-[26px] text-white py-14">
                 Web Designer based In New York
               </p>
-              <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mb-[93px]">
+              <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mb-[93px] cursor-pointer">
                 Get Connected
               </button>
             </div>
