@@ -13,7 +13,7 @@ const About = () => {
     email: "alamgirsarderinfo@gmailcom",
     phone: "+88 01642-252919",
     address: "Dhaka",
-    degree: "Dimploma",
+    degree: "Diploma",
     freelancer: "Available",
   };
   const about_card = [
