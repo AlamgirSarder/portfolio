@@ -1,21 +1,39 @@
 import React from "react";
 import Container from "../layouts/Container";
 import Flex from "../layouts/Flex";
+import Progressbar from "../layouts/Progressbar";
+
 import about_man from "../../assets/about_man.png";
 import about_laptop from "../../assets/about_laptop.png";
 import badge from "../../assets/badge.png";
 
 const About = () => {
-  const my_details = 
+  const my_details = {
+    name: "Alamgir Sarder",
+    email: "alamgirsarderinfo@gmailcom",
+    phone: "+88 01642-252919",
+    address: "Dhaka",
+    degree: "Dimploma",
+    freelancer: "Available",
+  };
+  const about_card = [
     {
-      name: "Alamgir Sarder",
-      email: "alamgirsarderinfo@gmailcom",
-      phone: "+88 01642-252919",
-      address: "Dhaka",
-      degree: "Dimploma",
-      freelancer: "Available",
-    }
- 
+      digit: "20",
+      description: "Digital Products",
+    },
+    {
+      digit: "280",
+      description: "Direct Clients",
+    },
+    {
+      digit: "3K",
+      description: "Total Projects",
+    },
+    {
+      digit: "9+",
+      description: "Awards Win",
+    },
+  ];
 
   return (
     <div className="bg-basecolor">
@@ -57,24 +75,107 @@ const About = () => {
                   fugiat.
                 </p>
 
-                  <Flex className="mt-14">
-                    <div className="pt-8 pl-10 pb-10 w-[304px] border border-[#00C0FF] rounded-tl-[14px] rounded-bl-[14px]">
-                       <h3 className="font-primary font-semibold text-2xl text-white">Name</h3>
-                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">{my_details?.name}</h2>
-                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">Email</h3>
-                    <h2 className="font-medium font-primary text-lg text-[#B4AFC6] mt-1.5">{my_details?.email}</h2>
-                     <h3 className="font-primary font-semibold text-2xl text-white mt-5">Phone</h3>
-                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">{my_details?.phone}</h2>
-                    </div>
-                    <div className="pt-8 pl-10 pb-10 w-[304px] border border-[#00C0FF] rounded-tr-[14px] rounded-br-[14px] border-l-0">
-                       <h3 className="font-primary font-semibold text-2xl text-white">Address</h3>
-                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">{my_details?.address}</h2>
-                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">Degree</h3>
-                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">{my_details?.degree}</h2>
-                     <h3 className="font-primary font-semibold text-2xl text-white mt-5">Freelancer</h3>
-                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">{my_details?.freelancer}</h2>
-                    </div>
+                <Flex className="mt-14">
+                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-[#00C0FF] rounded-tl-[14px] rounded-bl-[14px]">
+                    <h3 className="font-primary font-semibold text-2xl text-white">
+                      Name
+                    </h3>
+                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">
+                      {my_details?.name}
+                    </h2>
+                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">
+                      Email
+                    </h3>
+                    <h2 className="font-medium font-primary text-lg text-[#B4AFC6] mt-1.5">
+                      {my_details?.email}
+                    </h2>
+                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">
+                      Phone
+                    </h3>
+                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">
+                      {my_details?.phone}
+                    </h2>
+                  </div>
+                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-[#00C0FF] rounded-tr-[14px] rounded-br-[14px] border-l-0">
+                    <h3 className="font-primary font-semibold text-2xl text-white">
+                      Address
+                    </h3>
+                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">
+                      {my_details?.address}
+                    </h2>
+                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">
+                      Degree
+                    </h3>
+                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">
+                      {my_details?.degree}
+                    </h2>
+                    <h3 className="font-primary font-semibold text-2xl text-white mt-5">
+                      Freelancer
+                    </h3>
+                    <h2 className="font-medium font-primary text-xl text-[#B4AFC6] mt-1.5">
+                      {my_details?.freelancer}
+                    </h2>
+                  </div>
+                </Flex>
+                <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mt-[77px] cursor-pointer">
+                  Download CV
+                </button>
+              </div>
+            </Flex>
+
+            <Flex className="mt-[357px] mb-[220px] justify-between">
+              {about_card.map((item, i) => (
+                <div
+                  key={i}
+                  className="py-20 pl-11 bg-[#432D92] pr-16 rounded-2xl"
+                >
+                  <Flex>
+                    <h2 className="font-primary font-bold text-5xl text-[#00C0FF] mr-8">
+                      {item.digit}
+                    </h2>
+                    <p className="w-[90px] font-primary font-bold text-xl text-white">
+                      {item.description}
+                    </p>
                   </Flex>
+                </div>
+              ))}
+            </Flex>
+
+            <p className="font-primary text-2xl font-semibold text-[#00C0FF] text-center mb-5">
+              Skills
+            </p>
+            <h2 className="font-primary font-semibold text-[64px] text-white w-[1053px] mx-auto text-center leading-[123%] mb-[282px]">
+              I Work Hard to Improve My Skills Regularly
+            </h2>
+            <Flex className="justify-between">
+              <div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">HTML</h2>
+                  <Progressbar value={95} />
+                </div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">CSS</h2>
+                  <Progressbar value={75} />
+                </div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">JavaScript</h2>
+                  <Progressbar value={90} />
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">React</h2>
+                  <Progressbar value={70} />
+                </div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">Vue</h2>
+                  <Progressbar value={80} />
+                </div>
+                <div>
+                  <h2 className="font-primary font-semibold text-xl text-white">PHP</h2>
+                  <Progressbar value={90} />
+                </div>
               </div>
             </Flex>
           </div>
