@@ -119,7 +119,7 @@ const About = () => {
                     </h2>
                   </div>
                 </Flex>
-                <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mt-[77px] cursor-pointer">
+                <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mt-[77px] cursor-pointer shadow-lg shadow-[#00C0FF]/10">
                   Download CV
                 </button>
               </div>

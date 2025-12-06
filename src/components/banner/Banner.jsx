@@ -5,6 +5,7 @@ import bannerimg from "../../assets/banner_img.png";
 import banner01 from "../../assets/banner01.png";
 import banner02 from "../../assets/banner02.png";
 import banner03 from "../../assets/banner03.png";
+import TypingEffect from "../layouts/TypingEffect";
 const Banner = () => {
   const banner_service = [
     {
@@ -37,9 +38,12 @@ const Banner = () => {
                 Alamgir<span className="block text-[#00C0FF]">Sarder</span>
               </h1>
               <p className="font-medium text-[26px] text-white py-14">
-                Web Designer based In New York
+                I'm a {" "}
+                <span className="text-[#00C0FF]">
+                  <TypingEffect/>
+                </span>
               </p>
-              <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mb-[93px] cursor-pointer">
+              <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mb-[93px] cursor-pointer shadow-lg shadow-[#00C0FF]/10">
                 Get Connected
               </button>
             </div>
