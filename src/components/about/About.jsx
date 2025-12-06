@@ -6,6 +6,8 @@ import Progressbar from "../layouts/Progressbar";
 import about_man from "../../assets/about_man.png";
 import about_laptop from "../../assets/about_laptop.png";
 import badge from "../../assets/badge.png";
+import { FaReact,FaHtml5,FaCss3Alt,FaPhp,FaVuejs } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
 
 const About = () => {
   const my_details = {
@@ -150,30 +152,48 @@ const About = () => {
             <Flex className="justify-between">
               <div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">HTML</h2>
+                   <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">HTML</h2>
+                  <FaHtml5 size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={95} />
                 </div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">CSS</h2>
+                  <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">CSS</h2>
+                  <FaCss3Alt size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={75} />
                 </div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">JavaScript</h2>
+                  <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">JavaScript</h2>
+                  <RiJavascriptFill size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={90} />
                 </div>
               </div>
 
               <div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">React</h2>
+                  <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">React</h2>
+                  <FaReact size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={70} />
                 </div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">Vue</h2>
+                  <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">Vue</h2>
+                  <FaVuejs size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={80} />
                 </div>
                 <div>
-                  <h2 className="font-primary font-semibold text-xl text-white">PHP</h2>
+                 <Flex className="items-center gap-x-4">
+                    <h2 className="font-primary font-semibold text-xl text-white">PHP</h2>
+                  <FaPhp size={40} className="text-white"/>
+                  </Flex>
                   <Progressbar value={90} />
                 </div>
               </div>

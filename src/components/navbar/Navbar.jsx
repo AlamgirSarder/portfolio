@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaBehance } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 
 const Navbar = () => {
-  const menulist = ["Home", "About", "Service", "Portfolio", "Blog", "Contact"];
+  const menulist = ["Home", "About", "Service", "Projects", "Blog", "Contact"];
   const socialIcons = [
     <FaFacebookF />,
     <FaTwitter />,
