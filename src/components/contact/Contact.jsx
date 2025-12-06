@@ -20,17 +20,17 @@ const Contact = () => {
     <div className="bg-basecolor pb-5">
       <Container>
         <div>
-          <p className="font-primary text-2xl font-semibold text-[#00C0FF] text-center mb-6">
+          <p className="font-primary text-2xl font-semibold text-primary text-center mb-6">
             Contact
           </p>
           <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-[151px]">
             I Want to Hear from You
           </h2>
-
+ 
           <Flex className="justify-between items-center">
             <div className="w-[400px]">
               <Flex className="items-center gap-x-[25px] mb-[60px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-[#00C0FF] flex items-center justify-center">
+                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <FaLocationDot size={30} className="text-white" />
                 </div>
                 <div>
@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
               </Flex>
               <Flex className="items-center gap-x-[25px] mb-[60px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-[#00C0FF] flex items-center justify-center">
+                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <MdEmail size={30} className="text-white" />
                 </div>
                 <div>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </div>
               </Flex>
               <Flex className="items-center gap-x-[25px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-[#00C0FF] flex items-center justify-center">
+                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <FaPhone size={30} className="text-white" />
                 </div>
                 <div>
@@ -80,7 +80,7 @@ const Contact = () => {
                 <div>
                   <Textarea />
                 </div>
-                <button type="submit" onClick={handle} className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl cursor-pointer mt-4">
+                <button type="submit" onClick={handle} className="py-5 px-9 rounded-[50px] text-white bg-primary text-xl cursor-pointer mt-4">
                   Submit Now
                 </button>
               </form>

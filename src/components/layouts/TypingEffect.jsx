@@ -10,7 +10,7 @@ const TypingEffect = () => {
       typeSpeed: 40,
       backSpeed: 50,
       loop: true,
-    });
+    }); 
 
     return () => {
       typed.destroy();

@@ -5,7 +5,7 @@ import { Progress } from "@/components/ui/progress"
     <div className="relative w-[605px] mx-auto py-6">
       <Progress
         value={value}
-        className="h-2 bg-white rounded-full border [&>div]:bg-[#00C0FF]"
+        className="h-2 bg-white rounded-full border [&>div]:bg-primary"
      
       />
       <div

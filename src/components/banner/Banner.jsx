@@ -35,15 +35,15 @@ const Banner = () => {
           <Flex className="justify-between">
             <div className="pt-[237px] pb-[170px]">
               <h1 className="font-primary font-semibold text-white text-[138px] leading-36">
-                Alamgir<span className="block text-[#00C0FF]">Sarder</span>
-              </h1>
+                Alamgir<span className="block text-primary">Sarder</span>
+              </h1> 
               <p className="font-medium text-[26px] text-white py-14">
                 I'm a {" "}
-                <span className="text-[#00C0FF]">
+                <span className="text-primary">
                   <TypingEffect/>
                 </span>
               </p>
-              <button className="py-5 px-9 rounded-[50px] text-white bg-[#00C0FF] text-xl mb-[93px] cursor-pointer shadow-lg shadow-[#00C0FF]/10">
+              <button className="py-5 px-9 rounded-[50px] text-white bg-primary text-xl mb-[93px] cursor-pointer shadow-lg shadow-primary/10">
                 Get Connected
               </button>
             </div>

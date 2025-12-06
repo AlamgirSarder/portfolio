@@ -51,10 +51,10 @@ const services_card = [
 ]
 
   return (
-    <div className='bg-basecolor pb-[250px]'>
+    <div className='bg-basecolor pb-[250px]'> 
        <Container>
         <div>
-              <p className="font-primary text-2xl font-semibold text-[#00C0FF] text-center mb-6">
+              <p className="font-primary text-2xl font-semibold text-primary text-center mb-6">
               Services
             </p>
             <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-[151px]">

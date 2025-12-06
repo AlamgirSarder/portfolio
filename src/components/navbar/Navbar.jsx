@@ -8,7 +8,7 @@ import { TiSocialInstagram } from "react-icons/ti";
 const Navbar = () => {
   const menulist = ["Home", "About", "Service", "Projects", "Blog", "Contact"];
   const socialIcons = [
-    <FaFacebookF />,
+    <FaFacebookF />, 
     <FaTwitter />,
     <FaBehance />,
     <TiSocialInstagram />,
@@ -21,11 +21,11 @@ const Navbar = () => {
             <img className="w-auto" src={logo} alt="logo" />
           </div>
           <div className="mr-9">
-            <ul className="flex gap-x-8 relative after:absolute after:content-[''] after:w-[1px] after:h-[26px] after:bg-white after:top-1/2 after:-translate-y-1/2 after:-right-2.5">
+            <ul className="flex gap-x-8 relative after:absolute after:content-[''] after:w-px after:h-[26px] after:bg-white after:top-1/2 after:-translate-y-1/2 after:-right-2.5">
               {menulist.map((item, i) => (
                 <li key={i}>
                   <a
-                    className="font-secondary text-white text-2xl transition-all duration-300 hover:text-[#00C0FF]"
+                    className="font-secondary text-white text-2xl transition-all duration-300 hover:text-primary"
                     href="#"
                   >
                     {item}
@@ -37,9 +37,9 @@ const Navbar = () => {
           <div className="flex text-white gap-x-5 text-2xl">
             {socialIcons.map((Icon, index) => (
               <a
-                key={index}
+                key={index} 
                 href="#"
-                className="hover:text-[#00C0FF] transition-colors duration-300"
+                className="hover:text-primary transition-colors duration-300"
               >
                 {Icon}
               </a>
