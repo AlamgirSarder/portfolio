@@ -35,7 +35,7 @@ const Blog = () => {
                   <p className="font-primary text-2xl font-semibold text-[#00C0FF] text-center mb-6">
               Blog
             </p>
-            <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-14">
+            <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-24">
               Latest Blog Posts
             </h2>
 
