@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "../layouts/Container";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import Flex from "../layouts/Flex";
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
@@ -50,7 +50,8 @@ const Navbar = () => {
         <Flex className="items-center">
        
           <div className="flex-1">
-            <img className="w-auto h-10" src={logo} alt="logo" />
+            {/* <img className="w-auto h-10" src={logo} alt="logo" /> */}
+            <h2 className="font- font-secondary text-primary text-6xl font-bold ">Alamgir</h2>
           </div>
 
           <div className="mr-9">
