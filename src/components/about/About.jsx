@@ -15,10 +15,10 @@ import { DiMongodb } from "react-icons/di";
 const About = () => {
   const my_details = {
     name: "Alamgir Sarder",
-    email: "alamgirsarderinfo@gmailcom",
+    email: "alamgirsarderinfo@gmail.com",
     phone: "+88 01642-252919",
     address: "Dhaka",
-    degree: "Diploma",
+    degree: "B.Sc in Computer Science & Engineering (C.S.E)",
     freelancer: "Available",
   };
   const about_card = [
@@ -31,7 +31,7 @@ const About = () => {
       description: "Direct Clients",
     },
     {
-      digit: "3K",
+      digit: "100",
       description: "Total Projects",
     },
     {
@@ -162,7 +162,7 @@ const About = () => {
                     </h2>
                     <FaHtml5 size={40} className="text-white" />
                   </Flex>
-                  <Progressbar value={95} />
+                  <Progressbar value={90} />
                 </div>
                 <div>
                   <Flex className="items-center gap-x-4">

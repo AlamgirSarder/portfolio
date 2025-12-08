@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "../layouts/Container";
 import logo from "../../assets/logo.png";
 import Flex from "../layouts/Flex";
-import { FaFacebookF, FaTwitter, FaBehance } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 import { Link } from "react-scroll";
 
@@ -20,9 +20,8 @@ const Navbar = () => {
 
   const socialIcons = [
     <FaFacebookF />,
-    <TiSocialInstagram />,
     <FaTwitter />,
-    <FaBehance />,
+    <FaLinkedin />,
     <TiSocialInstagram />,
   ];
   useEffect(() => {
