@@ -1,7 +1,9 @@
 import React from "react";
 import Container from "../layouts/Container";
 import Flex from "../layouts/Flex";
-import bannerimg from "../../assets/banner_img.png";
+// import bannerimg from "../../assets/banner_img.png";
+import bannerimg02 from "../../assets/alamgir sarder.png";
+
 import banner01 from "../../assets/banner01.png";
 import banner02 from "../../assets/banner02.png";
 import banner03 from "../../assets/banner03.png";
@@ -32,7 +34,7 @@ const Banner = () => {
     <div className="bg-basecolor">
       <Container>
         <div>
-          <Flex className="justify-between">
+          <Flex className="justify-between items-center ">
             <div className="pt-[237px] pb-[170px]">
               <h1 className="font-primary font-semibold text-white text-[138px] leading-36">
                 Alamgir<span className="block text-primary">Sarder</span>
@@ -47,8 +49,9 @@ const Banner = () => {
                 Get Connected
               </button>
             </div>
-            <div className="flex justify-center items-center">
-              <img src={bannerimg} alt="banner image" />
+            <div className="flex justify-center items-center w-[600px] h-[600px] bg-primary rounded-full overflow-hidden">
+              {/* <img src={bannerimg02} alt="banner image" /> */}
+              <img src={bannerimg02} alt="banner image" />
             </div>
           </Flex>
           <div>

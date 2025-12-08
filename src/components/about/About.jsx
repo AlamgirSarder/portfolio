@@ -3,7 +3,8 @@ import Container from "../layouts/Container";
 import Flex from "../layouts/Flex";
 import Progressbar from "../layouts/Progressbar";
 
-import about_man from "../../assets/about_man.png";
+// import about_man from "../../assets/about_man.png";
+import about_man from "../../assets/alam.png";
 import about_laptop from "../../assets/about_laptop.png";
 import badge from "../../assets/badge.png";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs,FaFigma } from "react-icons/fa";
@@ -60,7 +61,9 @@ const About = () => {
                     src={badge}
                     alt="bagde"
                   />
-                  <img src={about_man} alt="about manp" />
+                 <div className="w-[474px] h-[564px] border border-primary flex items-center justify-center overflow-hidden  shadow-2xl">
+                   <img src={about_man} alt="about manp" />
+                 </div>
                   <img
                     className="absolute top-0 left-0 mt-[386px]"
                     src={about_laptop}
