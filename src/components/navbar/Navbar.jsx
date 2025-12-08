@@ -51,7 +51,7 @@ const Navbar = () => {
        
           <div className="flex-1">
             {/* <img className="w-auto h-10" src={logo} alt="logo" /> */}
-            <h2 className="font- font-secondary text-primary text-6xl font-bold ">Alamgir</h2>
+            <h2 className="font-playfair text-primary text-4xl font-bold ">ALAMGIR</h2>
           </div>
 
           <div className="mr-9">
