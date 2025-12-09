@@ -23,14 +23,14 @@ const Contact = () => {
           <p className="font-primary text-2xl font-semibold text-primary text-center mb-6">
             Contact
           </p>
-          <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-[151px]">
+          <h2 className="font-primary font-semibold text-2xl md:text-[64px] text-white md:w-[783px] mx-auto text-center leading-[123%] mb-20 md:mb-[151px]">
             I Want to Hear from You
           </h2>
  
-          <Flex className="justify-between items-center">
-            <div className="w-[400px]">
+          <Flex className="justify-between items-center flex-col md:flex-row">
+            <div className="w-full md:w-[400px]">
               <Flex className="items-center gap-x-[25px] mb-[60px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
+                <div className=" w-13 h-13 md:w-[87px] md:h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <FaLocationDot size={30} className="text-white" />
                 </div>
                 <div>
@@ -42,21 +42,21 @@ const Contact = () => {
                   </p>
                 </div>
               </Flex>
-              <Flex className="items-center gap-x-[25px] mb-[60px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
+               <Flex className="items-center gap-x-[25px] mb-[60px]">
+                <div className=" w-13 h-13 md:w-[87px] md:h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <MdEmail size={30} className="text-white" />
                 </div>
                 <div>
                   <h2 className="font-primary font-semibold text-4xl text-white">
                     Email
                   </h2>
-                  <p className="font-primary font-semibold text-xl text-[#B4AFC6]">
+                  <p className="font-primary font-semibold text-lg text-[#B4AFC6]">
                     alamgirsarderinfo@gmail.com
                   </p>
                 </div>
               </Flex>
-              <Flex className="items-center gap-x-[25px]">
-                <div className="w-[87px] h-[87px] rounded-full bg-primary flex items-center justify-center">
+               <Flex className="items-center gap-x-[25px] mb-[60px]">
+                <div className=" w-13 h-13 md:w-[87px] md:h-[87px] rounded-full bg-primary flex items-center justify-center">
                   <FaPhone size={30} className="text-white" />
                 </div>
                 <div>
@@ -68,10 +68,11 @@ const Contact = () => {
                   </p>
                 </div>
               </Flex>
+            
             </div>
-            <div className="w-[650px]">
+            <div className="md:w-[650px] text-center md:text-left">
               <form>
-                <Flex className="flex-wrap gap-6 justify-between">
+                <Flex className="flex-wrap gap-6 justify-between flex-col md:flex-row">
                   <InputFeild label="Your Name" />
                   <InputFeild label="Your Email" />
                   <InputFeild label="Your Phone" />

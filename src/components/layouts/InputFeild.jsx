@@ -7,7 +7,7 @@ const InputFeild = ({label}) => {
                     <input
                       type="text"
                       id="feild_id"
-                      className="block w-[300px] px-[26px] py-[26px] text-xl text-[#B4AFC6] font-primary font-semibold rounded-lg border border-primary appearance-none focus:outline-none focus:border-white peer shadow-lg shadow-primary/10"
+                      className="block w-full md:w-[300px] px-[26px] py-[26px] text-xl text-[#B4AFC6] font-primary font-semibold rounded-lg border border-primary appearance-none focus:outline-none focus:border-white peer shadow-lg shadow-primary/10"
                       placeholder=" "
                     /> 
                     <label
