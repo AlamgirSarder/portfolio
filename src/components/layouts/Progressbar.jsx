@@ -1,8 +1,8 @@
-// components/ProgressWithPercentage.jsx
+
 import { Progress } from "@/components/ui/progress"
  function Progressbar({ value = 0 }) {
   return (
-    <div className="relative w-[605px] mx-auto py-6">
+    <div className="relative md:w-[605px] mx-auto py-6">
       <Progress
         value={value}
         className="h-2 bg-white rounded-full border [&>div]:bg-primary"

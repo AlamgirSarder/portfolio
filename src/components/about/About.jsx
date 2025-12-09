@@ -52,33 +52,34 @@ const About = () => {
             <p className="font-primary text-2xl font-semibold text-primary text-center mb-5">
               About Me
             </p>
-            <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-[131px]">
+            <h2 className="font-primary font-semibold text-2xl md:text-[64px] text-white md:w-[783px] mx-auto text-center leading-[123%] mb-13 md:mb-[131px]">
               A Passionate Developer Who Loves to Code
             </h2>
 
-            <Flex className="justify-between">
+            <Flex className="justify-between flex-col md:flex-row">
               <div>
-                <Flex className="relative w-[667px]">
+                <Flex className="relative md:w-[667px] ">
                   <img
-                    className="w-[95px] h-[95px] mt-[151px] mr-[108px] animate-bounce"
+                    className="w-[95px] h-[95px] mt-[151px] mr-[108px] animate-bounce hidden md:block"
                     src={badge}
                     alt="bagde"
                   />
-                 <div className="flex items-center justify-center w-[462px] h-[564px] rounded-2xl">
+                 <div className="flex items-center justify-center w-[350px] h-[350px] md:w-[462px] md:h-[564px] rounded-2xl mx-auto ">
                    <img src={about_man} alt="about manp" className="w-ful h-full rounded-2xl"/>
                  </div>
                   <img
-                    className="absolute top-0 left-0 mt-[386px]"
+                    className="absolute top-0 left-0 mt-[386px] hidden md:block"
                     src={about_laptop}
                     alt="about laptop"
+                    
                   />
                 </Flex>
               </div>
-              <div className="w-[607px]">
-                <h2 className="font-primary font-semibold text-white text-5xl mb-8">
+              <div className="md:w-[607px] text-center md:text-left">
+                <h2 className="font-primary font-semibold text-white text-2xl md:text-5xl mb-8 mt-8 md:mt-0 text-center md:text-left">
                   About Me
                 </h2>
-                <p className="font-primary font-normal text-lg text-white leading-[123%] w-[597px] text-justify">
+                <p className="font-primary font-normal text-lg text-white leading-[123%] md:w-[597px] md:text-justify text-center">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occae
                   cat cupidatat non proident, sunt in culpa qui officia dese
@@ -86,8 +87,8 @@ const About = () => {
                   fugiat.
                 </p>
 
-                <Flex className="mt-14">
-                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-primary rounded-tl-[14px] rounded-bl-[14px]">
+                <Flex className="mt-14 flex-col md:flex-row gap-5 md:gap-0 text-left">
+                  <div className="pt-8 pl-10 pb-10 md:w-[304px] border border-primary md:rounded-tl-[14px] md:rounded-bl-[14px] rounded-2xl md:rounded-tr-none md:rounded-br-none">
                     <h3 className="font-primary font-semibold text-2xl text-white">
                       Name
                     </h3>
@@ -107,7 +108,7 @@ const About = () => {
                       {my_details?.phone}
                     </h2>
                   </div>
-                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-primary rounded-tr-[14px] rounded-br-[14px] border-l-0">
+                  <div className="pt-8 pl-10 pb-10 md:w-[304px] border border-primary md:rounded-tr-[14px] md:rounded-br-[14px] rounded-2xl md:rounded-tl-none md:rounded-bl-none md:border-l-0">
                     <h3 className="font-primary font-semibold text-2xl text-white">
                       Address
                     </h3>
@@ -128,24 +129,24 @@ const About = () => {
                     </h2>
                   </div>
                 </Flex>
-                <button className="py-5 px-9 rounded-[50px] text-white bg-primary text-xl mt-[77px] cursor-pointer shadow-lg shadow-primary/10">
+                <button className="py-5 px-9 rounded-[50px] text-white bg-primary text-xl mt-8 md:mt-[77px] cursor-pointer shadow-lg shadow-primary/10">
                   Download CV 
                   <MdDownload size={30} className="inline-block ml-4 animate-bounce"/>
                 </button>
               </div>
             </Flex>
 
-            <Flex className="mt-[357px] mb-[220px] justify-between">
+            <Flex className="mt-20 md:mt-[357px] mb-20 md:mb-[220px] md:justify-between flex-wrap gap-5 md:gap-0 ">
               {about_card.map((item, i) => (
                 <div
                   key={i}
-                  className="py-20 pl-11 bg-[#432D92] pr-16 rounded-2xl"
+                  className="py-10 md:py-20 md:pl-11 bg-[#432D92] md:pr-16 rounded-2xl w-40 h-40 md:w-auto md:h-auto"
                 >
-                  <Flex>
-                    <h2 className="font-primary font-bold text-5xl text-primary mr-8">
+                  <Flex className="flex-col md:flex-row text-center md:text-left">
+                    <h2 className="font-primary font-bold text-5xl text-primary md:mr-8">
                       {item.digit}
                     </h2>
-                    <p className="w-[90px] font-primary font-bold text-xl text-white">
+                    <p className="w-20 mx-auto md:w-[90px] font-primary font-bold text-xl text-white">
                       {item.description}
                     </p>
                   </Flex>
@@ -156,10 +157,10 @@ const About = () => {
             <p className="font-primary text-2xl font-semibold text-primary text-center mb-5">
               Skills
             </p>
-            <h2 className="font-primary font-semibold text-[64px] text-white w-[1053px] mx-auto text-center leading-[123%] mb-[282px]">
+            <h2 className="font-primary font-semibold text-2xl md:text-[64px] text-white md:w-[1053px] mx-auto text-center leading-[123%] mb-20 md:mb-[282px]">
               I Work Hard to Improve My Skills Regularly
             </h2>
-            <Flex className="justify-between">
+            <Flex className="justify-between flex-col md:flex-row">
               <div>
                 <div>
                   <Flex className="items-center gap-x-4">
