@@ -19,16 +19,16 @@ function App() {
         <About />
       </section>
       <section id="service">
-        <Service />
+        {/* <Service /> */}
       </section>
       <section id="projects">
-        <Project />
+        {/* <Project /> */}
       </section>
       <section id="blog">
-        <Blog />
+        {/* <Blog /> */}
       </section>
       <section id="contact">
-        <Contact />
+        {/* <Contact /> */}
       </section>
       <Backtotop/>
     </>
