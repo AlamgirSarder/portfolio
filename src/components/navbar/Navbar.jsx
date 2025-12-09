@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Container from "../layouts/Container";
 import Flex from "../layouts/Flex";
-import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedin, FaBars } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 import { Link } from "react-scroll";
-import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
@@ -20,19 +19,20 @@ const Navbar = () => {
     { name: "Contact", to: "contact" },
   ];
 
+
   const socialIcons = [
-    <FaFacebookF />,
-    <FaTwitter />,
-    <FaLinkedin />,
-    <TiSocialInstagram />,
+    FaFacebookF,
+    FaTwitter,
+    FaLinkedin,
+    TiSocialInstagram,
   ];
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
     };
-    window.addEventListener("scroll", handleScroll);
 
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -46,7 +46,8 @@ const Navbar = () => {
     >
       <Container>
         <Flex className="items-center flex-col md:flex-row">
-         
+          
+    
           <div className="md:flex-1 flex items-center justify-between w-full">
             <h2 className="font-playfair text-primary text-4xl font-bold">
               ALAMGIR
@@ -54,19 +55,20 @@ const Navbar = () => {
 
             {show ? (
               <ImCross
-                onClick={() => setShow(!show)}
+                onClick={() => setShow(false)}
                 size={30}
                 className="text-white md:hidden cursor-pointer"
               />
             ) : (
               <FaBars
-                onClick={() => setShow(!show)}
+                onClick={() => setShow(true)}
                 size={30}
                 className="text-white md:hidden cursor-pointer"
               />
             )}
           </div>
 
+     
           <div className="hidden md:block mr-9">
             <ul className="flex gap-x-10">
               {menulist.map((item, i) => (
@@ -76,7 +78,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     duration={800}
-                    offset={-100}
+                    offset={-80}
                     className="font-secondary text-white text-xl lg:text-2xl cursor-pointer hover:text-primary transition-all"
                   >
                     {item.name}
@@ -86,17 +88,18 @@ const Navbar = () => {
             </ul>
           </div>
 
-       
+    
           <div className="hidden md:flex text-white gap-x-5 text-2xl">
-            {socialIcons.map((Icon, index) => (
-              <a key={index} className="hover:text-primary transition-colors">
-                {Icon}
+            {socialIcons.map((Icon, i) => (
+              <a key={i} href="#" className="hover:text-primary transition-colors">
+                <Icon />
               </a>
             ))}
           </div>
 
           {show && (
             <div className="w-full mt-5 bg-basecolor md:hidden rounded-xl py-6 shadow-xl transition-all duration-500">
+              
               <ul className="flex flex-col items-center gap-y-5 mb-6">
                 {menulist.map((item, i) => (
                   <li key={i}>
@@ -105,7 +108,7 @@ const Navbar = () => {
                       spy={true}
                       smooth={true}
                       duration={800}
-                      offset={-100}
+                      offset={-80}
                       onClick={() => setShow(false)}
                       className="font-secondary text-white text-xl cursor-pointer hover:text-primary transition-all"
                     >
@@ -115,11 +118,10 @@ const Navbar = () => {
                 ))}
               </ul>
 
-         
               <div className="flex justify-center gap-x-6 text-white text-2xl">
-                {socialIcons.map((Icon, index) => (
-                  <a key={index} className="hover:text-primary transition-all">
-                    {Icon}
+                {socialIcons.map((Icon, i) => (
+                  <a key={i} href="#" className="hover:text-primary transition-all">
+                    <Icon />
                   </a>
                 ))}
               </div>
