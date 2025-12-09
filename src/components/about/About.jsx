@@ -4,7 +4,10 @@ import Flex from "../layouts/Flex";
 import Progressbar from "../layouts/Progressbar";
 
 // import about_man from "../../assets/about_man.png";
-import about_man from "../../assets/ax.png";
+// import about_man from "../../assets/ax.png";
+// import about_man from "../../assets/abbout.png";
+import about_man from "../../assets/aaabbb.png";
+
 import about_laptop from "../../assets/about_laptop.png";
 import badge from "../../assets/badge.png";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs,FaFigma } from "react-icons/fa";

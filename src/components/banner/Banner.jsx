@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../layouts/Container";
 import Flex from "../layouts/Flex";
 // import bannerimg from "../../assets/banner_img.png";
-import bannerimg02 from "../../assets/alamgir sarder.png";
+import bannerimg02 from "../../assets/ax_bg.png";
 
 import banner01 from "../../assets/banner01.png";
 import banner02 from "../../assets/banner02.png";
@@ -49,9 +49,10 @@ const Banner = () => {
                 Get Connected
               </button>
             </div>
-            <div className="flex justify-center items-center w-[600px] h-[600px] bg-primary rounded-full overflow-hidden">
+            <div className="flex justify-center items-center w-[550px] h-[550px]  bg-primary rounded-full overflow-hidden">
               {/* <img src={bannerimg02} alt="banner image" /> */}
-              <img src={bannerimg02} alt="banner image" />
+              {/* <img src={bannerimg02} alt="banner image" /> */}
+              <img src={bannerimg02} alt="banner image" className="w-full h-full" />
             </div>
           </Flex>
           <div>
