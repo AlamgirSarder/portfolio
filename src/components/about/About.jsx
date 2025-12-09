@@ -136,7 +136,7 @@ const About = () => {
               </div>
             </Flex>
 
-            <Flex className="mt-20 md:mt-[357px] mb-20 md:mb-[220px] md:justify-between flex-wrap gap-5 md:gap-0 ">
+            <Flex className="mt-20 md:mt-[357px] mb-20 md:mb-[220px] md:justify-between flex-wrap justify-between gap-y-10 md:gap-y-0 ">
               {about_card.map((item, i) => (
                 <div
                   key={i}

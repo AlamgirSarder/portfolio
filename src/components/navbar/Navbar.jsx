@@ -54,13 +54,13 @@ const Navbar = () => {
 
             {show ? (
               <ImCross
-                onClick={() => setShow(false)}
+                onClick={() => setShow(!show)}
                 size={30}
                 className="text-white md:hidden cursor-pointer"
               />
             ) : (
               <FaBars
-                onClick={() => setShow(true)}
+                onClick={() => setShow(!show)}
                 size={30}
                 className="text-white md:hidden cursor-pointer"
               />
