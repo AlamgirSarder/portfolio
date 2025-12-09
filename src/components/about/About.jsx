@@ -4,7 +4,7 @@ import Flex from "../layouts/Flex";
 import Progressbar from "../layouts/Progressbar";
 
 // import about_man from "../../assets/about_man.png";
-import about_man from "../../assets/ab.png";
+import about_man from "../../assets/ax.png";
 import about_laptop from "../../assets/about_laptop.png";
 import badge from "../../assets/badge.png";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs,FaFigma } from "react-icons/fa";
@@ -61,8 +61,8 @@ const About = () => {
                     src={badge}
                     alt="bagde"
                   />
-                 <div className="flex items-center justify-center ">
-                   <img src={about_man} alt="about manp" className="rounded-2xl"/>
+                 <div className="flex items-center justify-center w-[462px] h-[564px] rounded-2xl">
+                   <img src={about_man} alt="about manp" className="w-ful h-full rounded-2xl"/>
                  </div>
                   <img
                     className="absolute top-0 left-0 mt-[386px]"
@@ -72,7 +72,7 @@ const About = () => {
                 </Flex>
               </div>
               <div className="w-[607px]">
-                <h2 className="font-primary font-semibold text-white text-5xl mb-6">
+                <h2 className="font-primary font-semibold text-white text-5xl mb-8">
                   About Me
                 </h2>
                 <p className="font-primary font-normal text-lg text-white leading-[123%] w-[597px] text-justify">
@@ -83,8 +83,8 @@ const About = () => {
                   fugiat.
                 </p>
 
-                <Flex className="mt-8">
-                  <div className="pt-8 pl-10 pb-7 w-[304px] border border-primary rounded-tl-[14px] rounded-bl-[14px]">
+                <Flex className="mt-14">
+                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-primary rounded-tl-[14px] rounded-bl-[14px]">
                     <h3 className="font-primary font-semibold text-2xl text-white">
                       Name
                     </h3>
@@ -104,7 +104,7 @@ const About = () => {
                       {my_details?.phone}
                     </h2>
                   </div>
-                  <div className="pt-8 pl-10 pb-7 w-[304px] border border-primary rounded-tr-[14px] rounded-br-[14px] border-l-0">
+                  <div className="pt-8 pl-10 pb-10 w-[304px] border border-primary rounded-tr-[14px] rounded-br-[14px] border-l-0">
                     <h3 className="font-primary font-semibold text-2xl text-white">
                       Address
                     </h3>
