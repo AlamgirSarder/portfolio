@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Container from "../layouts/Container";
-// import logo from "../../assets/logo.png";
 import Flex from "../layouts/Flex";
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 import { Link } from "react-scroll";
+import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [show, setShow] = useState(false);
 
   const menulist = [
     { name: "Home", to: "navbar" },
@@ -24,15 +26,11 @@ const Navbar = () => {
     <FaLinkedin />,
     <TiSocialInstagram />,
   ];
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 80);
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -42,19 +40,34 @@ const Navbar = () => {
     <div
       className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
         scrolled
-          ? "bg-basecolor/95 backdrop-blur-md shadow-2xl py-4"
-          : "bg-transparent py-9"
+          ? "bg-basecolor/95 backdrop-blur-md shadow-xl py-4"
+          : "bg-basecolor md:bg-transparent py-6"
       }`}
     >
       <Container>
-        <Flex className="items-center">
-       
-          <div className="flex-1">
-            {/* <img className="w-auto h-10" src={logo} alt="logo" /> */}
-            <h2 className="font-playfair text-primary text-4xl font-bold ">ALAMGIR</h2>
+        <Flex className="items-center flex-col md:flex-row">
+         
+          <div className="md:flex-1 flex items-center justify-between w-full">
+            <h2 className="font-playfair text-primary text-4xl font-bold">
+              ALAMGIR
+            </h2>
+
+            {show ? (
+              <ImCross
+                onClick={() => setShow(false)}
+                size={30}
+                className="text-white md:hidden cursor-pointer"
+              />
+            ) : (
+              <FaBars
+                onClick={() => setShow(true)}
+                size={30}
+                className="text-white md:hidden cursor-pointer"
+              />
+            )}
           </div>
 
-          <div className="mr-9">
+          <div className="hidden md:block mr-9">
             <ul className="flex gap-x-10">
               {menulist.map((item, i) => (
                 <li key={i}>
@@ -62,11 +75,9 @@ const Navbar = () => {
                     to={item.to}
                     spy={true}
                     smooth={true}
-                    hashSpy={true}
                     duration={800}
                     offset={-100}
-                    className="font-secondary text-white text-xl lg:text-2xl cursor-pointer transition-all duration-300 hover:text-primary block"
-                    activeClass="!text-primary"
+                    className="font-secondary text-white text-xl lg:text-2xl cursor-pointer hover:text-primary transition-all"
                   >
                     {item.name}
                   </Link>
@@ -75,18 +86,45 @@ const Navbar = () => {
             </ul>
           </div>
 
-        
-          <div className="flex text-white gap-x-5 text-2xl">
+       
+          <div className="hidden md:flex text-white gap-x-5 text-2xl">
             {socialIcons.map((Icon, index) => (
-              <a
-                key={index}
-                href="#"
-                className="hover:text-primary transition-colors duration-300"
-              >
+              <a key={index} className="hover:text-primary transition-colors">
                 {Icon}
               </a>
             ))}
           </div>
+
+          {show && (
+            <div className="w-full mt-5 bg-basecolor md:hidden rounded-xl py-6 shadow-xl transition-all duration-500">
+              <ul className="flex flex-col items-center gap-y-5 mb-6">
+                {menulist.map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      to={item.to}
+                      spy={true}
+                      smooth={true}
+                      duration={800}
+                      offset={-100}
+                      onClick={() => setShow(false)}
+                      className="font-secondary text-white text-xl cursor-pointer hover:text-primary transition-all"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+         
+              <div className="flex justify-center gap-x-6 text-white text-2xl">
+                {socialIcons.map((Icon, index) => (
+                  <a key={index} className="hover:text-primary transition-all">
+                    {Icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </Flex>
       </Container>
     </div>
