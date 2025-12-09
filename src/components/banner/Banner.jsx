@@ -41,7 +41,7 @@ const Banner = () => {
                 Alamgir <span className="block text-primary">Sarder</span>
               </h1>
 
-              <p className="md:font-medium text-lg md:text-[26px] text-white py-5 md:py-10">
+              <p className="w-[200px] md:w-auto text-left md:font-medium text-lg md:text-[26px] text-white py-5 md:py-10">
                 I'm a {" "}
                 <span className="text-primary">
                   <TypingEffect />
