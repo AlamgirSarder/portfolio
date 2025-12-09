@@ -51,19 +51,19 @@ const services_card = [
 ]
 
   return (
-    <div className='bg-basecolor pb-[250px]'> 
+    <div className='bg-basecolor pb-20 md:pb-[250px]'> 
        <Container>
         <div>
               <p className="font-primary text-2xl font-semibold text-primary text-center mb-6">
               Services
             </p>
-            <h2 className="font-primary font-semibold text-[64px] text-white w-[783px] mx-auto text-center leading-[123%] mb-[151px]">
+            <h2 className="font-primary font-semibold text-2xl md:text-[64px] text-white md:w-[783px] mx-auto text-center leading-[123%] mb-13 md:mb-[151px]">
               What I Do for My Clients
             </h2>
     <Flex className='justify-between flex-wrap gap-y-[26px]'>
         {
             services_card.map((item,i)=>(
-                <div key={i} className='w-[423px] bg-[#432D92] rounded-[15px] pt-[75px] px-[71px] pb-[108px]'>
+                <div key={i} className='w-full md:w-[423px] bg-[#432D92] rounded-[15px] pt-[75px] px-[71px] pb-[108px]'>
                     <div>
                         <div className='relative'>
                               <div className='absolute top-7 left-28 w-[57px] h-[57px] rounded-full bg-[#51359F] z-0'></div>

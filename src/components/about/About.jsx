@@ -47,7 +47,7 @@ const About = () => {
   return (
     <div className="bg-basecolor">
       <Container>
-        <div className="pb-[244px]">
+        <div className="pb-20 md:pb-[244px]">
           <div>
             <p className="font-primary text-2xl font-semibold text-primary text-center mb-5">
               About Me
