@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between flex-col md:flex-row">
   
           <div className="w-full md:flex-1 flex items-center justify-between">
-            <h2 className="font-playfair text-primary text-4xl font-bold">
+            <h2 className="font-momo text-primary text-4xl font-bold">
               ALAMGIR
             </h2>
 
