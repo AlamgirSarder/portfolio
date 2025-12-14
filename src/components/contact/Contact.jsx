@@ -38,7 +38,7 @@ const Contact = () => {
                     Address
                   </h2>
                   <p className="font-primary font-semibold text-xl text-[#B4AFC6]">
-                    20, Somewhere in world
+                    Dhanmondi, Dhaka
                   </p>
                 </div>
               </Flex>
